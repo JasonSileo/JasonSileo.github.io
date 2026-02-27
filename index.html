@@ -1,5 +1,127 @@
-<html>
-  <body>
-    <h3>Me</h3>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and external resources -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Sileo | Data Analytics Student</title>
+
+    <!-- Tailwind CDN for easy styling; beginner-friendly because no build step required -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- web fonts used in the design -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // small Tailwind configuration block to customize fonts/colors
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0a0a0b',
+                            zinc: '#18181b',
+                            accent: '#3b82f6', // Professional Blue
+                        }
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-brand-black text-zinc-400 font-sans selection:bg-brand-accent selection:text-white">
+
+    <!-- Header section contains name, photo, degree, and resume link -->
+    <header class="border-b border-zinc-800 pt-20 pb-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <!-- profile picture pulled from assets folder -->
+                    <img class="w-32 h-32 rounded-full mb-4" src="assets/profile.jpg" alt="Profile photo of Jason Sileo">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">Jason Sileo</h1>
+                    <!-- degree/program information -->
+                    <div class="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-widest">
+                        <span class="bg-brand-accent text-white px-2 py-1 font-bold">BS Data Analytics & AI (Active)</span>
+                        <!-- certifications or other badges can be added here -->
+                    </div>
+                    <!-- link to resume PDF in assets directory -->
+                    <a href="assets/resume.pdf" class="inline-block mt-4 text-brand-accent font-semibold">Download Resume</a>
+                </div>
+                <div class="md:text-right">
+                    <!-- short descriptor of focus area -->
+                    <p class="text-white font-semibold text-lg">Undergraduate Data Analytics Student</p>
+                    <p class="text-sm">Statistics • Visualization • Predictive Modeling</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content area with various sections -->
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-24">
+
+        <!-- professional summary section -->
+        <section class="py-12">
+            <h2 class="text-white text-2xl font-bold mb-4">Professional Summary</h2>
+            <p class="text-zinc-400 leading-relaxed">
+                I am an undergraduate student in the Data Analytics program with a strong foundation in statistics, data visualization, and programming. I enjoy transforming raw data into actionable insights and have worked on projects involving exploratory data analysis, dashboard creation, and predictive modeling. My goal is to apply analytical techniques to real-world problems and contribute to data-driven decision making.
+            </p>
+        </section>
+
+        <!-- academic core or similar information could go here; keeping from original template as optional -->
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 space-y-8">
+                <h2 class="text-white text-xs font-mono uppercase tracking-[0.4em] border-b border-zinc-800 pb-2">Academic Core</h2>
+                <div class="grid sm:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-white font-bold mb-2">Data Intelligence</h3>
+                        <p class="text-sm leading-relaxed">Active <span class="text-zinc-200 font-semibold text-xs italic">Bachelor of Science</span> candidate specialized in AI-driven predictive modeling and large-scale data architecture.</p>
+                    </div>
+                    <!-- additional academic items can be added here -->
+                </div>
+            </div>
+            <div class="bg-zinc-900/50 border border-zinc-800 p-6 rounded-lg">
+                <h2 class="text-white text-[10px] font-mono uppercase tracking-widest mb-4">Technical Stack</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Java</span>
+                    <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Python</span>
+                    <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-1 rounded">SQL</span>
+                    <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Tableau</span>
+                    <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-1 rounded">PowerBI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- placeholder for Projects section -->
+        <section class="py-12">
+            <h2 class="text-white text-2xl font-bold mb-4">Projects</h2>
+            <ul class="list-disc list-inside text-zinc-400">
+                <li>Personal Website – built with GitHub Pages</li>
+                <li>Data Visualization Dashboard – Python &amp; Tableau</li>
+                <!-- add more project entries here -->
+            </ul>
+        </section>
+
+        <!-- placeholder for Skills section -->
+        <section class="py-12">
+            <h2 class="text-white text-2xl font-bold mb-4">Skills</h2>
+            <ul class="list-disc list-inside text-zinc-400">
+                <li>Python, R</li>
+                <li>SQL &amp; Database Management</li>
+                <li>Tableau, PowerBI</li>
+                <li>Statistical Modeling</li>
+                <!-- add more skills here -->
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- optional footer from original template -->
+    <footer class="border-t border-zinc-800 py-20 px-6 text-center">
+        <p class="text-[10px] font-mono uppercase tracking-[0.5em] text-zinc-600">Jason Sileo // Undergraduate Portfolio</p>
+    </footer>
+
+</body>
 </html>
