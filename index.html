@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jason Sileo | Systems Engineering & Intelligence Portfolio</title>
+    <title>Jason Sileo | Systems Engineering & Intelligence</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     
     <script>
-        // Customizing the theme to use the high-tech Zinc and Emerald Green palette
         tailwind.config = {
             theme: {
                 extend: {
@@ -20,9 +18,9 @@
                     },
                     colors: {
                         brand: {
-                            black: '#09090b',
-                            zinc: '#18181b',
-                            accent: '#10b981', // High-tech Emerald Green
+                            black: '#000000', // Pure black for maximum contrast
+                            zinc: '#111111',  // Slightly lighter for cards
+                            accent: '#34d399', // Brighter Emerald-400 for better readability
                         }
                     },
                 },
@@ -31,31 +29,30 @@
     </script>
 </head>
 
-<body class="bg-brand-black text-zinc-400 font-sans selection:bg-brand-accent selection:text-white">
+<body class="bg-brand-black text-zinc-200 font-sans selection:bg-brand-accent selection:text-black">
 
     <header class="border-b border-zinc-800 pt-16 pb-10 px-6">
         <div class="max-w-5xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
                 <div class="flex flex-col md:flex-row items-center gap-6">
-                    <img class="w-32 h-32 rounded-full border-2 border-brand-accent p-1 shadow-lg shadow-brand-accent/20" 
+                    <img class="w-32 h-32 rounded-full border-2 border-brand-accent p-1" 
                          src="assets/profile.jpg" 
-                         alt="Jason Sileo Profile Photo">
+                         alt="Jason Sileo">
                     
                     <div class="text-center md:text-left">
-                        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-2">Jason Sileo</h1>
-                        <div class="flex flex-wrap justify-center md:justify-start gap-3 font-mono text-[10px] uppercase tracking-widest mt-2">
-                            <span class="bg-brand-accent text-black px-2 py-1 font-bold">BS Cybersecurity</span>
-                            <span class="border border-brand-accent/50 text-brand-accent px-2 py-1 font-bold">BS Data Analytics & AI (Active)</span>
+                        <h1 class="text-5xl font-extrabold text-white tracking-tight mb-2">Jason Sileo</h1>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-3 font-mono text-[11px] uppercase tracking-widest">
+                            <span class="bg-brand-accent text-black px-2 py-1 font-bold">BS Data Analytics & AI (Active)</span>
+                            <span class="border border-zinc-500 text-zinc-300 px-2 py-1">BS Cybersecurity</span>
                         </div>
+                        <a href="assets/resume.pdf" download class="inline-block mt-4 text-brand-accent hover:text-white transition-colors text-sm font-bold underline underline-offset-4">
+                            Download Resume
+                        </a>
                     </div>
                 </div>
-
-                <div class="flex justify-center">
-                    <a href="assets/resume.pdf" download 
-                       class="bg-brand-accent hover:bg-emerald-400 text-black font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                        Download Resume
-                    </a>
+                <div class="text-center md:text-right">
+                    <p class="text-white font-bold text-lg uppercase tracking-tight">Data Analytics Student</p>
+                    <p class="text-sm text-zinc-400 font-mono">Statistics • Visualization • Predictive Modeling</p>
                 </div>
             </div>
         </div>
@@ -64,92 +61,70 @@
     <main class="max-w-5xl mx-auto px-6 py-16 space-y-20">
 
         <section>
-            <h2 class="text-white text-xs font-mono uppercase tracking-[0.4em] border-b border-zinc-800 pb-2 mb-6">Professional Profile</h2>
-            <p class="text-lg text-zinc-300 leading-relaxed italic">
-                "Technical leader and dual-degree candidate merging deep field experience in <span class="text-white font-semibold">Systems Inspection</span> with modern <span class="text-white font-semibold">Cybersecurity and Data Intelligence</span>. 
-                I specialize in maintaining operational integrity within high-stakes, zero-fail environments—applying the rigor of mission-critical military oversight to scalable software and data solutions."
+            <h2 class="text-white text-sm font-mono uppercase tracking-[0.4em] border-b border-zinc-700 pb-2 mb-6">Professional Profile</h2>
+            <p class="text-xl text-white leading-relaxed font-light">
+                Undergraduate Data Analytics student with a dual-degree foundation in <span class="text-brand-accent font-bold">Cybersecurity</span>. I leverage a background as a <span class="underline decoration-brand-accent/50">U.S. Navy Systems Inspector and Stray Voltage SME</span> to bring a "zero-fail" engineering mindset to data visualization and AI automation.
             </p>
         </section>
 
-        <section class="space-y-8">
-            <h2 class="text-white text-xs font-mono uppercase tracking-[0.4em] border-b border-zinc-800 pb-2">Technical Authority</h2>
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 space-y-8">
+                <h2 class="text-white text-sm font-mono uppercase tracking-[0.4em] border-b border-zinc-700 pb-2">Academic Core</h2>
+                <div>
+                    <h3 class="text-white font-bold text-2xl mb-3">Data Intelligence</h3>
+                    <p class="text-base text-zinc-300 leading-relaxed">Active <span class="italic text-white">Bachelor of Science</span> candidate specialized in AI-driven predictive modeling and large-scale data architecture.</p>
+                </div>
+                <div class="flex gap-4 pt-4">
+                    <div class="border border-brand-accent p-4 rounded-lg flex-1 bg-brand-accent/5">
+                        <p class="text-white text-sm font-bold">CompTIA Security+</p>
+                        <p class="text-xs text-brand-accent font-mono uppercase font-bold">Certified Nov 2028</p>
+                    </div>
+                    <div class="border border-zinc-600 p-4 rounded-lg flex-1">
+                        <p class="text-zinc-300 text-sm font-bold">AWS Cloud Practitioner</p>
+                        <p class="text-xs text-zinc-500 font-mono uppercase">Target Jan 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-zinc p-6 rounded-xl border border-zinc-800">
+                <h2 class="text-white text-xs font-mono uppercase tracking-widest mb-6 text-center border-b border-zinc-800 pb-2">Technical Stack</h2>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <span class="text-xs bg-white text-black px-3 py-1 rounded font-bold">Java</span>
+                    <span class="text-xs bg-white text-black px-3 py-1 rounded font-bold">Python</span>
+                    <span class="text-xs bg-white text-black px-3 py-1 rounded font-bold">SQL</span>
+                    <span class="text-xs bg-zinc-700 text-white px-3 py-1 rounded font-bold">PowerBI</span>
+                    <span class="text-xs bg-zinc-700 text-white px-3 py-1 rounded font-bold">K8s</span>
+                    <span class="text-xs bg-zinc-700 text-white px-3 py-1 rounded font-bold">Docker</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-white text-sm font-mono uppercase tracking-[0.4em] border-b border-zinc-700 pb-2 mb-8">Engineering Projects</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-6 bg-zinc-900/50 border border-zinc-800 rounded-xl">
-                    <h3 class="text-white font-bold text-xl">Stray Voltage SME</h3>
-                    <p class="text-brand-accent text-xs font-mono mb-4">PRINCIPAL COMMAND QUALIFIER</p>
-                    <p class="text-sm">Exclusive authority for certifying technical competency in hazard release protocols. Managed risk for multi-million dollar avionics arrays.</p>
+                <div class="border border-zinc-800 p-8 rounded-xl hover:border-brand-accent transition-colors bg-zinc/50">
+                    <h3 class="text-white font-bold text-lg mb-3">MyGreenThumb: IoT Edge Controller</h3>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Developing an AI-integrated app for low-voltage Bluetooth UIS devices to automate and optimize plant yields.</p>
                 </div>
-                <div class="p-6 bg-zinc-900/50 border border-zinc-800 rounded-xl">
-                    <h3 class="text-white font-bold text-xl text-gradient">Systems Inspector</h3>
-                    <p class="text-zinc-500 text-xs font-mono mb-4">RADAR • NAV • ARMAMENT</p>
-                    <p class="text-sm">Conducted precision audits on navigation and weapon systems, ensuring 100% mission readiness through rigorous diagnostic workflows.</p>
+                <div class="border border-zinc-800 p-8 rounded-xl hover:border-brand-accent transition-colors bg-zinc/50">
+                    <h3 class="text-white font-bold text-lg mb-3">Stateful Kubernetes Deployment</h3>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Deployed a stateful application in K8s to manage persistent data layers and service reliability.</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 class="text-white text-xs font-mono uppercase tracking-[0.4em] border-b border-zinc-800 pb-2 mb-8">Active Projects</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="border border-zinc-800 p-8 rounded-xl hover:border-brand-accent transition-all cursor-default">
-                    <h3 class="text-white font-bold text-lg mb-2">MyGreenThumb: UIS IoT Controller</h3>
-                    <p class="text-sm text-zinc-500 mb-4">Developing an AI-driven middleware for Bluetooth UIS ecosystems to optimize plant yields via real-time telemetry.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] font-mono bg-zinc-800 text-brand-accent px-2 py-1 rounded">IoT</span>
-                        <span class="text-[10px] font-mono bg-zinc-800 text-brand-accent px-2 py-1 rounded">BLE Protocol</span>
-                    </div>
+                <div class="border border-zinc-800 p-8 rounded-xl hover:border-brand-accent transition-colors bg-zinc/50">
+                    <h3 class="text-white font-bold text-lg mb-3">World Happiness Analysis (Power BI)</h3>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Transformed raw datasets into interactive visual dashboards to identify global wellness trends.</p>
                 </div>
-                <div class="border border-zinc-800 p-8 rounded-xl hover:border-brand-accent transition-all cursor-default">
-                    <h3 class="text-white font-bold text-lg mb-2">Kubernetes Stateful Deployment</h3>
-                    <p class="text-sm text-zinc-500 mb-4">Architecting persistent data layers in K8s clusters for high-availability distributed systems.</p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] font-mono bg-zinc-800 text-brand-accent px-2 py-1 rounded">DevOps</span>
-                        <span class="text-[10px] font-mono bg-zinc-800 text-brand-accent px-2 py-1 rounded">K8s</span>
-                    </div>
+                <div class="border border-zinc-800 p-8 rounded-xl hover:border-brand-accent transition-colors bg-zinc/50">
+                    <h3 class="text-white font-bold text-lg mb-3">Multi-Threaded Concurrency Model</h3>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Developed a producer-consumer thread management system for high-efficiency data processing in Java.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="grid md:grid-cols-3 gap-12">
-            <div class="md:col-span-2">
-                <h2 class="text-white text-xs font-mono uppercase tracking-[0.4em] border-b border-zinc-800 pb-2 mb-6">Technical Skills</h2>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> Python & Java</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> SQL / Databases</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> PowerBI & Tableau</li>
-                    </ul>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> Network Defense</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> Risk Auditing</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> Cryptography</li>
-                    </ul>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> UIS Protocols</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> Systems Inspection</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-accent">▹</span> Radar Diagnostics</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl">
-                <h3 class="text-white font-bold text-sm mb-4 uppercase font-mono">Certifications</h3>
-                <ul class="space-y-3 text-xs">
-                    <li class="flex justify-between items-center border-b border-zinc-800 pb-2">
-                        <span>CompTIA Security+</span>
-                        <span class="text-brand-accent font-bold">ACTIVE</span>
-                    </li>
-                    <li class="flex justify-between items-center border-b border-zinc-800 pb-2 italic text-zinc-600">
-                        <span>AWS Cloud Practitioner</span>
-                        <span>IN-PROGRESS</span>
-                    </li>
-                </ul>
             </div>
         </section>
 
     </main>
 
-    <footer class="border-t border-zinc-800 py-16 px-6 text-center">
-        <p class="text-[10px] font-mono uppercase tracking-[0.5em] text-zinc-600 mb-2">Jason Sileo // Systems Engineering Portfolio</p>
-        <p class="text-[10px] text-zinc-800 italic uppercase">Mission Integrity through Data Intelligence</p>
+    <footer class="border-t border-zinc-800 py-20 px-6 text-center bg-zinc/30">
+        <p class="text-xs font-mono uppercase tracking-[0.5em] text-white font-bold">Jason Sileo // Undergraduate Portfolio</p>
     </footer>
 
 </body>
